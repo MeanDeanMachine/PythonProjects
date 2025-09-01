@@ -11,89 +11,89 @@ def seed_movies():
         return False
     
     movie_model = Movie()
-    
     sample_movies = [
         {
-            "title": "The Matrix",
-            "description": "A computer programmer discovers that reality as he knows it is a simulation controlled by machines.",
-            "genre": "Action, Sci-Fi",
-            "year": 1999,
+            "title": "Momo Wins the Masters",
+            "description": "After Stephen becomes hospitalized due to a cheese allergy, one dog defies all the odds by picking up Bernie's old golf clubs to win the whole Masters.",
+            "genre": "Comedy",
+            "year": 2025,
             "duration": 136,
             "video_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
-            "thumbnail_url": "https://via.placeholder.com/300x450/000000/FFFFFF?text=The+Matrix",
+            "thumbnail_url": "https://i.imgur.com/zpHjZe3.png",
             "rating": 8.7
         },
         {
-            "title": "Inception",
-            "description": "A thief who steals corporate secrets through dream-sharing technology is given the inverse task of planting an idea.",
-            "genre": "Action, Sci-Fi, Thriller",
-            "year": 2010,
+            "title": "Happy Gilmore 3",
+            "description": "After winning the PGA tournament, Happy Gilmore embarks on a new adventure.",
+            "genre": "Action, Comedy, Sports",
+            "year": 2025,
             "duration": 148,
             "video_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
-            "thumbnail_url": "https://via.placeholder.com/300x450/000000/FFFFFF?text=Inception",
+            "thumbnail_url": "https://i.imgur.com/fzHOtkr.png",
             "rating": 8.8
         },
         {
-            "title": "The Shawshank Redemption",
-            "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-            "genre": "Drama",
-            "year": 1994,
-            "duration": 142,
-            "video_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4",
-            "thumbnail_url": "https://via.placeholder.com/300x450/000000/FFFFFF?text=Shawshank",
-            "rating": 9.3
-        },
-        {
-            "title": "Pulp Fiction",
-            "description": "The lives of two mob hitmen, a boxer, a gangster and his wife intertwine in four tales of violence and redemption.",
-            "genre": "Crime, Drama",
-            "year": 1994,
+            "title": "The Summer Piper broke up with Brodie",
+            "description": "Young love, a story of a romance that fizzled out, keep your head up short king.",
+            "genre": "Romance",
+            "year": 2025,
             "duration": 154,
             "video_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
-            "thumbnail_url": "https://via.placeholder.com/300x450/000000/FFFFFF?text=Pulp+Fiction",
+            "thumbnail_url": "https://i.imgur.com/HdzlnkP.png",
             "rating": 8.9
         },
         {
-            "title": "The Dark Knight",
-            "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests.",
-            "genre": "Action, Crime, Drama",
-            "year": 2008,
+            "title": "Seinfeld",
+            "description": "The classic sitcom about four friends in New York City.",
+            "genre": "Comedy",
+            "year": 1990,
             "duration": 152,
             "video_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
-            "thumbnail_url": "https://via.placeholder.com/300x450/000000/FFFFFF?text=Dark+Knight",
+            "thumbnail_url": "https://i.imgur.com/biVKvaG.jpeg",
             "rating": 9.0
         },
         {
-            "title": "Stranger Things",
-            "description": "When a young boy disappears, his mother, a police chief and his friends must confront terrifying supernatural forces.",
+            "title": "Pria meets the Lake Dolphin",
+            "description": "A tale as old as time, one girl paddles out in Emerald Lake and discovers the hidden treasure of the lake, a lone dolphin.",
+            "genre": "Drama",
+            "year": 2025,
+            "duration": 142,
+            "video_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4",
+            "thumbnail_url": "https://i.imgur.com/XtyeXhz.png",
+            "rating": 9.3
+        },
+        {
+            "title": "Lola does Returns",
+            "description": "Strap yourselves in its going to be a long one, Lola does returns for her last Gucci run.",
             "genre": "Drama, Fantasy, Horror",
             "year": 2016,
             "duration": 50,
             "video_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_5mb.mp4",
-            "thumbnail_url": "https://via.placeholder.com/300x450/000000/FFFFFF?text=Stranger+Things",
+            "thumbnail_url": "https://i.imgur.com/Li4jcQQ.png",
             "rating": 8.7
         },
         {
-            "title": "Breaking Bad",
-            "description": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine.",
+            "title": "Mandy Goes on a Plane",
+            "description": "What turns out to be a routine business trip takes an unexpected turn when Mandy discovers she has an annoying seat neighbor",
             "genre": "Crime, Drama, Thriller",
-            "year": 2008,
+            "year": 2025,
             "duration": 47,
             "video_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4",
-            "thumbnail_url": "https://via.placeholder.com/300x450/000000/FFFFFF?text=Breaking+Bad",
+            "thumbnail_url": "https://i.imgur.com/lulDdYi.png",
             "rating": 9.5
         },
         {
-            "title": "The Crown",
-            "description": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
-            "genre": "Biography, Drama, History",
-            "year": 2016,
+            "title": "The Dark Knight",
+            "description": "After Batman's parents are murdered, he vows to rid Gotham of corruption as a vigilante.",
+            "genre": "Action, Crime, Drama",
+            "year": 2008,
             "duration": 58,
             "video_url": "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4",
-            "thumbnail_url": "https://via.placeholder.com/300x450/000000/FFFFFF?text=The+Crown",
+            "thumbnail_url": "https://i.imgur.com/75VcOVc.jpeg",
             "rating": 8.7
         }
     ]
+    
     
     try:
         for movie_data in sample_movies:

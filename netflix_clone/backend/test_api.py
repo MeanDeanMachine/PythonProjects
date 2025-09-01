@@ -12,10 +12,10 @@ def test_database_connection():
     """Test MongoDB connection"""
     print("Testing database connection...")
     if db_instance.connect():
-        print("✓ Database connected successfully")
+        print("Database connected successfully")
         return True
     else:
-        print("✗ Database connection failed")
+        print("Database connection failed")
         return False
 
 def test_movie_seeding():
@@ -25,12 +25,12 @@ def test_movie_seeding():
     movies = movie_model.get_all_movies(limit=100)
     
     if movies:
-        print(f"✓ Found {len(movies)} movies in database")
+        print(f"Found {len(movies)} movies in database")
         for movie in movies[:3]:
             print(f"  - {movie['title']} ({movie['year']})")
         return True
     else:
-        print("✗ No movies found in database")
+        print("No movies found in database")
         return False
 
 def seed_if_empty():
@@ -42,10 +42,10 @@ def seed_if_empty():
         print("Database is empty. Seeding with sample data...")
         from seed_data import seed_movies
         if seed_movies():
-            print("✓ Sample data seeded successfully")
+            print("Sample data seeded successfully")
             return True
         else:
-            print("✗ Failed to seed sample data")
+            print("Failed to seed sample data")
             return False
     return True
 
@@ -59,12 +59,12 @@ def test_api_endpoints():
     try:
         response = requests.get(f"{base_url}/health", timeout=5)
         if response.status_code == 200:
-            print("✓ Health endpoint working")
+            print("Health endpoint working")
         else:
-            print(f"✗ Health endpoint returned {response.status_code}")
+            print(f"Health endpoint returned {response.status_code}")
             return False
     except requests.exceptions.RequestException as e:
-        print(f"✗ Cannot connect to backend server: {e}")
+        print(f"Cannot connect to backend server: {e}")
         print("Make sure to run 'python app.py' first")
         return False
     
@@ -74,32 +74,32 @@ def test_api_endpoints():
         if response.status_code == 200:
             data = response.json()
             movie_count = len(data.get('movies', []))
-            print(f"✓ Movies endpoint working - {movie_count} movies found")
+            print(f"Movies endpoint working - {movie_count} movies found")
             return True
         else:
-            print(f"✗ Movies endpoint returned {response.status_code}")
+            print(f"Movies endpoint returned {response.status_code}")
             return False
     except requests.exceptions.RequestException as e:
-        print(f"✗ Movies endpoint error: {e}")
+        print(f"Movies endpoint error: {e}")
         return False
 
 def main():
-    print("🎬 Netflix Clone Backend Test")
+    print("Netflix Clone Backend Test")
     print("=" * 40)
     
     # Test database
     if not test_database_connection():
-        print("\n❌ Database connection failed. Please install and start MongoDB.")
+        print("\nDatabase connection failed. Please install and start MongoDB.")
         return
     
     # Seed if needed
     if not seed_if_empty():
-        print("\n❌ Failed to seed database.")
+        print("\nFailed to seed database.")
         return
     
     # Check movies
     if not test_movie_seeding():
-        print("\n❌ No movies in database.")
+        print("\nNo movies in database.")
         return
     
     # Test API (optional - only if server is running)

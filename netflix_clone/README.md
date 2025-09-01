@@ -48,6 +48,8 @@ setup.bat
 This will install all Node.js dependencies.
 
 ### 3. Start the Application
+Use Chrome launch with CORS disabled
+"Chrome --disable-web-security --user-data-dir="C:/ChromeDevSession""
 
 **Terminal 1 - Backend:**
 ```bash
